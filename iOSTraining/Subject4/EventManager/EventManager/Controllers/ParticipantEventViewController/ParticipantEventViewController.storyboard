@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xs8-0q-4PO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--参加者編集-->
+        <scene sceneID="hcF-1E-zLj">
+            <objects>
+                <viewController id="xs8-0q-4PO" customClass="ParticipantEventViewController" customModule="EventManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZI4-aB-ErS"/>
+                        <viewControllerLayoutGuide type="bottom" id="QWY-z6-wLQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Uu-lV-k6O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-Ie-6Nf">
+                                <rect key="frame" x="16" y="108" width="343" height="58.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz8-ZP-DhJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ny-3T-4jB">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="editingChangedName:" destination="xs8-0q-4PO" eventType="editingChanged" id="hfw-rU-RZQ"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kHh-Ie-6Nf" secondAttribute="trailing" id="e4j-LX-1iO"/>
+                            <constraint firstItem="kHh-Ie-6Nf" firstAttribute="top" secondItem="ZI4-aB-ErS" secondAttribute="bottom" constant="88" id="eX6-Pf-kbt"/>
+                            <constraint firstItem="kHh-Ie-6Nf" firstAttribute="leading" secondItem="1Uu-lV-k6O" secondAttribute="leadingMargin" id="kdq-vC-loq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="参加者編集" id="Met-Uk-uVZ">
+                        <barButtonItem key="leftBarButtonItem" title="キャンセル" id="Ty9-zf-HeW">
+                            <connections>
+                                <action selector="onTapCancel:" destination="xs8-0q-4PO" id="Bcx-m9-xTa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="完了" style="done" id="lYw-dH-ZEy">
+                            <connections>
+                                <action selector="onTapComplete:" destination="xs8-0q-4PO" id="U5x-Jt-wor"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="9Ny-3T-4jB" id="Ibp-VS-smU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkH-4t-1Ul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="96"/>
+        </scene>
+    </scenes>
+</document>

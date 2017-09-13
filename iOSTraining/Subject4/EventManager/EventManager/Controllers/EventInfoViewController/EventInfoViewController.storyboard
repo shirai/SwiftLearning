@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QEq-Is-Sq7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--詳細-->
+        <scene sceneID="7Zt-94-DgR">
+            <objects>
+                <viewController id="QEq-Is-Sq7" customClass="EventInfoViewController" customModule="EventManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F5b-Ww-50l"/>
+                        <viewControllerLayoutGuide type="bottom" id="Phg-s4-byT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hQE-Bh-Eil">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Hm-Pu-d5g">
+                                <rect key="frame" x="16" y="108" width="343" height="126.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="場所：デフォルト場所" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9li-aH-q20">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="開始時間：デフォルト時間" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGE-9F-39N">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="現在参加人数：デフォルト人数" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNt-y7-4zc">
+                                        <rect key="frame" x="0.0" y="57" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="参加者氏名：デフォルト太郎、デフォルト花子" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j8-8c-ucJ">
+                                        <rect key="frame" x="0.0" y="85.5" width="343" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJ9-GC-yWu">
+                                <rect key="frame" x="156" y="559" width="62" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MXd-Hf-vAq"/>
+                                </constraints>
+                                <state key="normal" title="参加する"/>
+                                <connections>
+                                    <action selector="onTapJoinButton:" destination="QEq-Is-Sq7" eventType="touchUpInside" id="iHA-Gc-tBK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Hm-Pu-d5g" firstAttribute="leading" secondItem="hQE-Bh-Eil" secondAttribute="leadingMargin" id="2lg-Sq-J6C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Hm-Pu-d5g" secondAttribute="trailing" id="6Vy-35-ioo"/>
+                            <constraint firstItem="jJ9-GC-yWu" firstAttribute="centerX" secondItem="hQE-Bh-Eil" secondAttribute="centerX" id="LmC-tC-x6O"/>
+                            <constraint firstItem="0Hm-Pu-d5g" firstAttribute="top" secondItem="F5b-Ww-50l" secondAttribute="bottom" constant="88" id="ckP-Kd-JDW"/>
+                            <constraint firstItem="Phg-s4-byT" firstAttribute="top" secondItem="jJ9-GC-yWu" secondAttribute="bottom" constant="20" id="rtG-0F-B6a"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="詳細" id="gVm-V4-SHW"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="participantsCountLabel" destination="jNt-y7-4zc" id="LpT-9C-Zij"/>
+                        <outlet property="participantsLabel" destination="6j8-8c-ucJ" id="5tV-Bg-weL"/>
+                        <outlet property="placeLabel" destination="9li-aH-q20" id="7gl-EY-Mhn"/>
+                        <outlet property="startTimeLabel" destination="XGE-9F-39N" id="pNV-fH-H0r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJS-JJ-Ies" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

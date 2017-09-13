@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>イベントA</string>
+		<key>place</key>
+		<string>東京</string>
+		<key>startTime</key>
+		<date>2017-09-11T03:00:00Z</date>
+		<key>participants</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>白井</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>田中</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>イベントB</string>
+		<key>place</key>
+		<string>大阪</string>
+		<key>startTime</key>
+		<date>2017-09-11T12:00:00Z</date>
+		<key>participants</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>佐藤</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>渡辺</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>イベントC</string>
+		<key>place</key>
+		<string>名古屋</string>
+		<key>startTime</key>
+		<date>2017-09-10T23:00:00Z</date>
+		<key>participants</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>荒木</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>伊藤</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
