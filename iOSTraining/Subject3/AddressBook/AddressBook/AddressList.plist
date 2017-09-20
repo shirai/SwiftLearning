@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>佐藤</string>
+		<key>mailAddress</key>
+		<string>sato@localhost.com</string>
+		<key>phoneNumber</key>
+		<string>090-0000-0000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>鈴木</string>
+		<key>mailAddress</key>
+		<string>suzuki@localhost.com</string>
+		<key>phoneNumber</key>
+		<string>090-0000-0001</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>高橋</string>
+		<key>mailAddress</key>
+		<string>takahashi@localhost.com</string>
+		<key>phoneNumber</key>
+		<string>090-0000-0002</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>田中</string>
+		<key>mailAddress</key>
+		<string>tanaka@localhost.com</string>
+		<key>phoneNumber</key>
+		<string>090-0000-0003</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>伊藤</string>
+		<key>mailAddress</key>
+		<string>ito@localhost.com</string>
+		<key>phoneNumber</key>
+		<string>090-0000-0004</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>渡辺</string>
+		<key>mailAddress</key>
+		<string>watanabe@localhost.com</string>
+		<key>phoneNumber</key>
+		<string>090-0000-0005</string>
+	</dict>
+</array>
+</plist>

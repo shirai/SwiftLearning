@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1fp-t7-DqJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--連絡先一覧-->
+        <scene sceneID="oay-0o-rYr">
+            <objects>
+                <tableViewController id="guo-ab-xJU" customClass="AddressListViewController" customModule="AddressBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7uZ-g0-hOg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AddressListCell" textLabel="1Lf-eU-L2k" style="IBUITableViewCellStyleDefault" id="zYi-Yn-hL8">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zYi-Yn-hL8" id="OAM-Gt-wI9">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Lf-eU-L2k">
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="mbD-Ml-s4q" kind="show" identifier="showDetail" id="Qxd-He-QKI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="guo-ab-xJU" id="gGX-dB-gYG"/>
+                            <outlet property="delegate" destination="guo-ab-xJU" id="Cv0-R4-ASr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="連絡先一覧" id="kl6-w9-dN6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dj2-Xp-k1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="271"/>
+        </scene>
+        <!--連絡先詳細-->
+        <scene sceneID="Ekz-S8-4Ze">
+            <objects>
+                <viewController id="mbD-Ml-s4q" customClass="AddressDetailViewController" customModule="AddressBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0GZ-AJ-qHi"/>
+                        <viewControllerLayoutGuide type="bottom" id="29X-Pz-362"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhh-5M-S7w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" tag="8" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="q3W-aN-KLv">
+                                <rect key="frame" x="16" y="104" width="343" height="81.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="iPI-Zr-0xG">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVP-U0-G9h">
+                                                <rect key="frame" x="0.0" y="0.0" width="161" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="default@localhost.com" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2S-wn-WLb">
+                                                <rect key="frame" x="161" y="0.0" width="161" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="M1h-0V-4fM">
+                                        <rect key="frame" x="0.0" y="61" width="322" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モバイル番号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quk-dd-klD">
+                                                <rect key="frame" x="0.0" y="0.0" width="161" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="090-0000-0000" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAd-AG-lBR">
+                                                <rect key="frame" x="161" y="0.0" width="161" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N2S-wn-WLb" firstAttribute="leading" secondItem="YAd-AG-lBR" secondAttribute="leading" id="3JR-tL-z8g"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1Z-mY-Dlc">
+                                <rect key="frame" x="171.5" y="225.5" width="31" height="30"/>
+                                <state key="normal" title="編集"/>
+                                <connections>
+                                    <segue destination="vHH-vh-9cQ" kind="presentation" identifier="showEdit" id="ieS-Rb-cv6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="q3W-aN-KLv" secondAttribute="trailing" id="UDa-2I-SJ6"/>
+                            <constraint firstItem="q3W-aN-KLv" firstAttribute="top" secondItem="0GZ-AJ-qHi" secondAttribute="bottom" constant="40" id="aR8-Vn-6Kc"/>
+                            <constraint firstItem="q3W-aN-KLv" firstAttribute="leading" secondItem="hhh-5M-S7w" secondAttribute="leadingMargin" id="cLV-HZ-oDz"/>
+                            <constraint firstItem="S1Z-mY-Dlc" firstAttribute="top" secondItem="q3W-aN-KLv" secondAttribute="bottom" constant="40" id="iYk-6r-3TC"/>
+                            <constraint firstItem="S1Z-mY-Dlc" firstAttribute="centerX" secondItem="hhh-5M-S7w" secondAttribute="centerX" id="z2q-fX-4ZL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="連絡先詳細" id="Jkm-iR-ZK7"/>
+                    <connections>
+                        <outlet property="mailAddressLabel" destination="N2S-wn-WLb" id="Xlb-fE-yvE"/>
+                        <outlet property="phoneNumberLabel" destination="YAd-AG-lBR" id="DDp-bf-vsf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J33-nb-wcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="270"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sp1-tZ-dRs">
+            <objects>
+                <navigationController id="vHH-vh-9cQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SJx-DU-dUP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lXF-1O-mxC" kind="relationship" relationship="rootViewController" id="2vy-BL-EmJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2r-yn-0vD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="978"/>
+        </scene>
+        <!--連絡先編集-->
+        <scene sceneID="aER-JR-eeI">
+            <objects>
+                <viewController id="lXF-1O-mxC" customClass="AddressEditViewController" customModule="AddressBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hFP-3G-3qb"/>
+                        <viewControllerLayoutGuide type="bottom" id="mD1-Uv-uYU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v8f-s2-s6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" tag="8" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lvc-GZ-UpN">
+                                <rect key="frame" x="16" y="104" width="343" height="137"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UMn-N7-b3C">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="58.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-fX-Etf">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaZ-yq-WBL">
+                                                <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="49d-pH-dSX">
+                                        <rect key="frame" x="0.0" y="78.5" width="343" height="58.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モバイル番号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0a-mC-qDE">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8e-Ff-cjG">
+                                                <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lvc-GZ-UpN" firstAttribute="top" secondItem="hFP-3G-3qb" secondAttribute="bottom" constant="40" id="Va1-nT-bvY"/>
+                            <constraint firstItem="Lvc-GZ-UpN" firstAttribute="leading" secondItem="v8f-s2-s6b" secondAttribute="leadingMargin" id="WXH-iT-0CG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lvc-GZ-UpN" secondAttribute="trailing" id="kXz-RS-hyz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="連絡先編集" id="MhN-2R-psw">
+                        <barButtonItem key="leftBarButtonItem" title="キャンセル" id="xpK-MS-3h4">
+                            <connections>
+                                <action selector="onTapCancel:" destination="lXF-1O-mxC" id="vne-iS-vpH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="完了" style="done" id="Ojk-c8-uLK">
+                            <connections>
+                                <action selector="onTapComplete:" destination="lXF-1O-mxC" id="MlA-6h-BKw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mailAddressTextField" destination="DaZ-yq-WBL" id="g0g-g7-M8W"/>
+                        <outlet property="phoneNumberTextField" destination="r8e-Ff-cjG" id="gAd-Xm-Nrd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9PR-gT-hby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2521" y="977"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O6f-YK-x0m">
+            <objects>
+                <navigationController id="1fp-t7-DqJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3BS-Gk-4a6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="guo-ab-xJU" kind="relationship" relationship="rootViewController" id="wDU-9S-Xdp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXf-g3-4rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="271"/>
+        </scene>
+    </scenes>
+</document>
