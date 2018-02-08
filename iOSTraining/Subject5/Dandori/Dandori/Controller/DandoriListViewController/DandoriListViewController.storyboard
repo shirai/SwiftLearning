@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="crs-vx-ZPy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ダンドリ-->
+        <scene sceneID="9CL-OV-gMu">
+            <objects>
+                <viewController id="XHD-OW-rH5" customClass="DandoriListViewController" customModule="Dandori" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OgB-x1-IgW"/>
+                        <viewControllerLayoutGuide type="bottom" id="2z4-Mv-FFT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="21k-cS-9gG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WuE-Gd-OQ2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dandoriCell" id="hkM-0K-lz3" customClass="DandoriListCell" customModule="Dandori" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hkM-0K-lz3" id="UCb-fs-Lah">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sg1-gb-bZd">
+                                                    <rect key="frame" x="8" y="8" width="359" height="83.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5l-QI-4mO">
+                                                            <rect key="frame" x="0.0" y="27" width="30" height="30"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="ZVH-kq-gGG"/>
+                                                                <constraint firstAttribute="width" constant="30" id="zbS-fB-omC"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                            <state key="normal" title="□"/>
+                                                            <connections>
+                                                                <action selector="didTappedCheckButton:" destination="hkM-0K-lz3" eventType="touchUpInside" id="6PQ-NA-Emq"/>
+                                                            </connections>
+                                                        </button>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lwJ-Y3-dCW">
+                                                            <rect key="frame" x="40" y="0.5" width="319" height="83"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ダンドリ名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29i-AD-bKD">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="319" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ダンドリ日時" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSU-nC-dy3">
+                                                                    <rect key="frame" x="0.0" y="30.5" width="319" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8qT-Xk-xJr">
+                                                                    <rect key="frame" x="0.0" y="55" width="319" height="28"/>
+                                                                    <subviews>
+                                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-Gz-7UG">
+                                                                            <rect key="frame" x="80" y="0.0" width="159.5" height="29"/>
+                                                                            <segments>
+                                                                                <segment title="男"/>
+                                                                                <segment title="女"/>
+                                                                            </segments>
+                                                                            <connections>
+                                                                                <action selector="didChangedGenderSegment:" destination="hkM-0K-lz3" eventType="valueChanged" id="yeG-Oq-0Y2"/>
+                                                                            </connections>
+                                                                        </segmentedControl>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="cLZ-Gz-7UG" firstAttribute="width" secondItem="8qT-Xk-xJr" secondAttribute="width" multiplier="1:2" id="hFq-h0-h89"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Sg1-gb-bZd" secondAttribute="bottom" constant="8" id="68o-Yc-15f"/>
+                                                <constraint firstItem="Sg1-gb-bZd" firstAttribute="leading" secondItem="UCb-fs-Lah" secondAttribute="leading" constant="8" id="Bx2-wc-cdW"/>
+                                                <constraint firstItem="Sg1-gb-bZd" firstAttribute="top" secondItem="UCb-fs-Lah" secondAttribute="top" constant="8" id="Kqj-uY-JGv"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sg1-gb-bZd" secondAttribute="trailing" constant="8" id="QdO-ev-w28"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkButton" destination="m5l-QI-4mO" id="WGa-0A-th4"/>
+                                            <outlet property="dateLabel" destination="pSU-nC-dy3" id="r33-U6-Zim"/>
+                                            <outlet property="genderSegment" destination="cLZ-Gz-7UG" id="7Iz-qd-Pp3"/>
+                                            <outlet property="titleLabel" destination="29i-AD-bKD" id="5AG-3g-V87"/>
+                                            <segue destination="hZR-s2-QTt" kind="show" id="ATi-Sx-gZz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="XHD-OW-rH5" id="BXa-BV-8Tx"/>
+                                    <outlet property="delegate" destination="XHD-OW-rH5" id="v7D-Xa-2cj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WuE-Gd-OQ2" firstAttribute="leading" secondItem="21k-cS-9gG" secondAttribute="leading" id="0h4-yc-rZ0"/>
+                            <constraint firstAttribute="trailing" secondItem="WuE-Gd-OQ2" secondAttribute="trailing" id="Kcl-pr-tTv"/>
+                            <constraint firstItem="2z4-Mv-FFT" firstAttribute="top" secondItem="WuE-Gd-OQ2" secondAttribute="bottom" id="YfF-b4-Xgd"/>
+                            <constraint firstItem="WuE-Gd-OQ2" firstAttribute="top" secondItem="21k-cS-9gG" secondAttribute="top" id="bY0-EN-EtM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="AJA-s4-597"/>
+                    <navigationItem key="navigationItem" title="ダンドリ" id="sS9-of-4G7">
+                        <barButtonItem key="rightBarButtonItem" title="リセット" id="nKk-JD-Adh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="WuE-Gd-OQ2" id="cnT-sh-fbq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cr6-te-QJ9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="-322.48875562218893"/>
+        </scene>
+        <!--DandoriDetailViewController-->
+        <scene sceneID="3IU-0R-wpk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DandoriDetailViewController" id="hZR-s2-QTt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZ8-Ua-aMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="-323"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LNj-Dc-Mur">
+            <objects>
+                <navigationController id="crs-vx-ZPy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wRQ-j7-v9n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XHD-OW-rH5" kind="relationship" relationship="rootViewController" id="kDe-fD-a7G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3TQ-XC-siK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="-321"/>
+        </scene>
+    </scenes>
+</document>

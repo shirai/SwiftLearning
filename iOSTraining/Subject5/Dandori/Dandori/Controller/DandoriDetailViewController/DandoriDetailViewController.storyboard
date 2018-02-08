@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MVi-pK-ipl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--詳細-->
+        <scene sceneID="5al-9k-MgG">
+            <objects>
+                <viewController id="MVi-pK-ipl" customClass="DandoriDetailViewController" customModule="Dandori" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WVj-hz-DxZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="h1X-b9-HI1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mlj-nQ-8xM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z4a-tf-qv0">
+                                <rect key="frame" x="16" y="28" width="335" height="83"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkO-rn-8KT">
+                                        <rect key="frame" x="0.0" y="26.5" width="30" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="NfJ-Ke-Rwf"/>
+                                            <constraint firstAttribute="width" constant="30" id="sGz-BO-Bob"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="■"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="keT-ih-s1v">
+                                        <rect key="frame" x="40" y="0.0" width="295" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A-1のダンドリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxB-bQ-wGK">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/09/13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB5-1J-S2C">
+                                                <rect key="frame" x="0.0" y="30.5" width="295" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tjv-cb-5YU">
+                                                <rect key="frame" x="0.0" y="55" width="295" height="28"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="weU-FU-ApU">
+                                                        <rect key="frame" x="74" y="0.0" width="147.5" height="29"/>
+                                                        <segments>
+                                                            <segment title="男"/>
+                                                            <segment title="女"/>
+                                                        </segments>
+                                                    </segmentedControl>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="weU-FU-ApU" firstAttribute="width" secondItem="Tjv-cb-5YU" secondAttribute="width" multiplier="1:2" id="TfP-Yk-ct6"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hF6-uO-INb">
+                                <rect key="frame" x="117" y="147" width="140" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRP-HA-tJx">
+                                        <rect key="frame" x="1" y="1" width="138" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="日付を変更"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="6gz-07-mV2"/>
+                                    <constraint firstAttribute="trailing" secondItem="DRP-HA-tJx" secondAttribute="trailing" constant="1" id="BTH-MX-LXp"/>
+                                    <constraint firstAttribute="bottom" secondItem="DRP-HA-tJx" secondAttribute="bottom" constant="1" id="ECg-DQ-92r"/>
+                                    <constraint firstItem="DRP-HA-tJx" firstAttribute="leading" secondItem="hF6-uO-INb" secondAttribute="leading" constant="1" id="lYU-Du-mFZ"/>
+                                    <constraint firstItem="DRP-HA-tJx" firstAttribute="top" secondItem="hF6-uO-INb" secondAttribute="top" constant="1" id="nHG-wL-4bL"/>
+                                    <constraint firstAttribute="height" constant="48" id="uJu-4K-Ezi"/>
+                                </constraints>
+                            </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7dF-aZ-vqz">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="527081471.27507401">
+                                    <!--2017-09-14 11:31:11 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja_JP"/>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MqP-k8-Uhz">
+                                <rect key="frame" x="0.0" y="407" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem width="320" style="plain" systemItem="fixedSpace" id="PCJ-gP-wtv"/>
+                                    <barButtonItem title="完了" id="8lw-ar-wH0"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7dF-aZ-vqz" firstAttribute="top" secondItem="MqP-k8-Uhz" secondAttribute="bottom" id="22U-M5-7Xt"/>
+                            <constraint firstItem="MqP-k8-Uhz" firstAttribute="leading" secondItem="Mlj-nQ-8xM" secondAttribute="leading" id="3tv-Gi-CZu"/>
+                            <constraint firstItem="hF6-uO-INb" firstAttribute="top" secondItem="z4a-tf-qv0" secondAttribute="bottom" constant="36" id="6r5-kn-bt5"/>
+                            <constraint firstItem="z4a-tf-qv0" firstAttribute="leading" secondItem="Mlj-nQ-8xM" secondAttribute="leadingMargin" id="9bC-6y-utw"/>
+                            <constraint firstItem="7dF-aZ-vqz" firstAttribute="leading" secondItem="Mlj-nQ-8xM" secondAttribute="leading" id="PU7-Qx-e7N"/>
+                            <constraint firstItem="z4a-tf-qv0" firstAttribute="top" secondItem="WVj-hz-DxZ" secondAttribute="bottom" constant="8" id="bHp-mG-a8R"/>
+                            <constraint firstItem="hF6-uO-INb" firstAttribute="centerX" secondItem="Mlj-nQ-8xM" secondAttribute="centerX" id="crY-Pd-dqY"/>
+                            <constraint firstAttribute="trailing" secondItem="7dF-aZ-vqz" secondAttribute="trailing" id="fA3-Kp-WzY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z4a-tf-qv0" secondAttribute="trailing" constant="8" id="vqD-Ha-kJr"/>
+                            <constraint firstAttribute="trailing" secondItem="MqP-k8-Uhz" secondAttribute="trailing" id="wkM-pL-tqz"/>
+                            <constraint firstItem="h1X-b9-HI1" firstAttribute="top" secondItem="7dF-aZ-vqz" secondAttribute="bottom" id="z5h-UH-oXF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="eOf-tf-eo6"/>
+                    <navigationItem key="navigationItem" title="詳細" id="Toc-zK-ySA"/>
+                    <connections>
+                        <outlet property="changeDateButton" destination="DRP-HA-tJx" id="f2L-Ws-e1t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBo-LT-Mi4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+    </scenes>
+</document>

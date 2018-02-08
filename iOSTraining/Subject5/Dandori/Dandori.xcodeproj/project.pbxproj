@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2DE7B611F6027DE0030ED20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE7B601F6027DE0030ED20 /* AppDelegate.swift */; };
+		C2DE7B681F6027DE0030ED20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE7B661F6027DE0030ED20 /* Main.storyboard */; };
+		C2DE7B6A1F6027DE0030ED20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DE7B691F6027DE0030ED20 /* Assets.xcassets */; };
+		C2DE7B6D1F6027DE0030ED20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE7B6B1F6027DE0030ED20 /* LaunchScreen.storyboard */; };
+		C2DE7B781F6027DE0030ED20 /* DandoriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE7B771F6027DE0030ED20 /* DandoriTests.swift */; };
+		C2DE7B871F6028560030ED20 /* DandoriListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE7B861F6028560030ED20 /* DandoriListViewController.storyboard */; };
+		C2DE7B8A1F6028AD0030ED20 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE7B891F6028AD0030ED20 /* SettingViewController.storyboard */; };
+		C2DE7B8C1F6028E60030ED20 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE7B8B1F6028E60030ED20 /* SettingViewController.swift */; };
+		C2DE7B8E1F6028F30030ED20 /* DandoriListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE7B8D1F6028F30030ED20 /* DandoriListViewController.swift */; };
+		C2DE7B911F6034300030ED20 /* DandoriDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE7B901F6034300030ED20 /* DandoriDetailViewController.storyboard */; };
+		C2DE7B931F6034460030ED20 /* DandoriDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE7B921F6034460030ED20 /* DandoriDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2DE7B741F6027DE0030ED20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DE7B551F6027DE0030ED20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2DE7B5C1F6027DE0030ED20;
+			remoteInfo = Dandori;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2DE7B5D1F6027DE0030ED20 /* Dandori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dandori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DE7B601F6027DE0030ED20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2DE7B671F6027DE0030ED20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2DE7B691F6027DE0030ED20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2DE7B6C1F6027DE0030ED20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2DE7B6E1F6027DE0030ED20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2DE7B731F6027DE0030ED20 /* DandoriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DandoriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DE7B771F6027DE0030ED20 /* DandoriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DandoriTests.swift; sourceTree = "<group>"; };
+		C2DE7B791F6027DE0030ED20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2DE7B861F6028560030ED20 /* DandoriListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DandoriListViewController.storyboard; path = Controller/DandoriListViewController/DandoriListViewController.storyboard; sourceTree = "<group>"; };
+		C2DE7B891F6028AD0030ED20 /* SettingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingViewController.storyboard; path = Controller/SettingViewController/SettingViewController.storyboard; sourceTree = "<group>"; };
+		C2DE7B8B1F6028E60030ED20 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = Controller/SettingViewController/SettingViewController.swift; sourceTree = "<group>"; };
+		C2DE7B8D1F6028F30030ED20 /* DandoriListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DandoriListViewController.swift; path = Controller/DandoriListViewController/DandoriListViewController.swift; sourceTree = "<group>"; };
+		C2DE7B901F6034300030ED20 /* DandoriDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DandoriDetailViewController.storyboard; path = Controller/DandoriDetailViewController/DandoriDetailViewController.storyboard; sourceTree = "<group>"; };
+		C2DE7B921F6034460030ED20 /* DandoriDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DandoriDetailViewController.swift; path = Controller/DandoriDetailViewController/DandoriDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2DE7B5A1F6027DE0030ED20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DE7B701F6027DE0030ED20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2DE7B541F6027DE0030ED20 = {
+			isa = PBXGroup;
+			children = (
+				C2DE7B5F1F6027DE0030ED20 /* Dandori */,
+				C2DE7B761F6027DE0030ED20 /* DandoriTests */,
+				C2DE7B5E1F6027DE0030ED20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2DE7B5E1F6027DE0030ED20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2DE7B5D1F6027DE0030ED20 /* Dandori.app */,
+				C2DE7B731F6027DE0030ED20 /* DandoriTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2DE7B5F1F6027DE0030ED20 /* Dandori */ = {
+			isa = PBXGroup;
+			children = (
+				C2DE7B601F6027DE0030ED20 /* AppDelegate.swift */,
+				C2DE7B661F6027DE0030ED20 /* Main.storyboard */,
+				C2DE7B841F6028010030ED20 /* Model */,
+				C2DE7B831F6027FC0030ED20 /* View */,
+				C2DE7B821F6027ED0030ED20 /* Controller */,
+				C2DE7B691F6027DE0030ED20 /* Assets.xcassets */,
+				C2DE7B6B1F6027DE0030ED20 /* LaunchScreen.storyboard */,
+				C2DE7B6E1F6027DE0030ED20 /* Info.plist */,
+			);
+			path = Dandori;
+			sourceTree = "<group>";
+		};
+		C2DE7B761F6027DE0030ED20 /* DandoriTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2DE7B771F6027DE0030ED20 /* DandoriTests.swift */,
+				C2DE7B791F6027DE0030ED20 /* Info.plist */,
+			);
+			path = DandoriTests;
+			sourceTree = "<group>";
+		};
+		C2DE7B821F6027ED0030ED20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2DE7B8F1F6034130030ED20 /* DandoriDetailViewController */,
+				C2DE7B851F60282C0030ED20 /* DandoriListViewController */,
+				C2DE7B881F60288F0030ED20 /* SettingViewController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C2DE7B831F6027FC0030ED20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C2DE7B841F6028010030ED20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C2DE7B851F60282C0030ED20 /* DandoriListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2DE7B861F6028560030ED20 /* DandoriListViewController.storyboard */,
+				C2DE7B8D1F6028F30030ED20 /* DandoriListViewController.swift */,
+			);
+			name = DandoriListViewController;
+			sourceTree = "<group>";
+		};
+		C2DE7B881F60288F0030ED20 /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2DE7B891F6028AD0030ED20 /* SettingViewController.storyboard */,
+				C2DE7B8B1F6028E60030ED20 /* SettingViewController.swift */,
+			);
+			name = SettingViewController;
+			sourceTree = "<group>";
+		};
+		C2DE7B8F1F6034130030ED20 /* DandoriDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2DE7B901F6034300030ED20 /* DandoriDetailViewController.storyboard */,
+				C2DE7B921F6034460030ED20 /* DandoriDetailViewController.swift */,
+			);
+			name = DandoriDetailViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2DE7B5C1F6027DE0030ED20 /* Dandori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DE7B7C1F6027DE0030ED20 /* Build configuration list for PBXNativeTarget "Dandori" */;
+			buildPhases = (
+				C2DE7B591F6027DE0030ED20 /* Sources */,
+				C2DE7B5A1F6027DE0030ED20 /* Frameworks */,
+				C2DE7B5B1F6027DE0030ED20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dandori;
+			productName = Dandori;
+			productReference = C2DE7B5D1F6027DE0030ED20 /* Dandori.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2DE7B721F6027DE0030ED20 /* DandoriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DE7B7F1F6027DE0030ED20 /* Build configuration list for PBXNativeTarget "DandoriTests" */;
+			buildPhases = (
+				C2DE7B6F1F6027DE0030ED20 /* Sources */,
+				C2DE7B701F6027DE0030ED20 /* Frameworks */,
+				C2DE7B711F6027DE0030ED20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2DE7B751F6027DE0030ED20 /* PBXTargetDependency */,
+			);
+			name = DandoriTests;
+			productName = DandoriTests;
+			productReference = C2DE7B731F6027DE0030ED20 /* DandoriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2DE7B551F6027DE0030ED20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Sample;
+				TargetAttributes = {
+					C2DE7B5C1F6027DE0030ED20 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					C2DE7B721F6027DE0030ED20 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2DE7B5C1F6027DE0030ED20;
+					};
+				};
+			};
+			buildConfigurationList = C2DE7B581F6027DE0030ED20 /* Build configuration list for PBXProject "Dandori" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2DE7B541F6027DE0030ED20;
+			productRefGroup = C2DE7B5E1F6027DE0030ED20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2DE7B5C1F6027DE0030ED20 /* Dandori */,
+				C2DE7B721F6027DE0030ED20 /* DandoriTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2DE7B5B1F6027DE0030ED20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DE7B6D1F6027DE0030ED20 /* LaunchScreen.storyboard in Resources */,
+				C2DE7B6A1F6027DE0030ED20 /* Assets.xcassets in Resources */,
+				C2DE7B911F6034300030ED20 /* DandoriDetailViewController.storyboard in Resources */,
+				C2DE7B8A1F6028AD0030ED20 /* SettingViewController.storyboard in Resources */,
+				C2DE7B681F6027DE0030ED20 /* Main.storyboard in Resources */,
+				C2DE7B871F6028560030ED20 /* DandoriListViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DE7B711F6027DE0030ED20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2DE7B591F6027DE0030ED20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DE7B8C1F6028E60030ED20 /* SettingViewController.swift in Sources */,
+				C2DE7B931F6034460030ED20 /* DandoriDetailViewController.swift in Sources */,
+				C2DE7B611F6027DE0030ED20 /* AppDelegate.swift in Sources */,
+				C2DE7B8E1F6028F30030ED20 /* DandoriListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DE7B6F1F6027DE0030ED20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DE7B781F6027DE0030ED20 /* DandoriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2DE7B751F6027DE0030ED20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2DE7B5C1F6027DE0030ED20 /* Dandori */;
+			targetProxy = C2DE7B741F6027DE0030ED20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2DE7B661F6027DE0030ED20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2DE7B671F6027DE0030ED20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2DE7B6B1F6027DE0030ED20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2DE7B6C1F6027DE0030ED20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2DE7B7A1F6027DE0030ED20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2DE7B7B1F6027DE0030ED20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2DE7B7D1F6027DE0030ED20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dandori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.Dandori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C2DE7B7E1F6027DE0030ED20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dandori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.Dandori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C2DE7B801F6027DE0030ED20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DandoriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.DandoriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dandori.app/Dandori";
+			};
+			name = Debug;
+		};
+		C2DE7B811F6027DE0030ED20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DandoriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sample.DandoriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dandori.app/Dandori";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2DE7B581F6027DE0030ED20 /* Build configuration list for PBXProject "Dandori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DE7B7A1F6027DE0030ED20 /* Debug */,
+				C2DE7B7B1F6027DE0030ED20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2DE7B7C1F6027DE0030ED20 /* Build configuration list for PBXNativeTarget "Dandori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DE7B7D1F6027DE0030ED20 /* Debug */,
+				C2DE7B7E1F6027DE0030ED20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C2DE7B7F1F6027DE0030ED20 /* Build configuration list for PBXNativeTarget "DandoriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2DE7B801F6027DE0030ED20 /* Debug */,
+				C2DE7B811F6027DE0030ED20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2DE7B551F6027DE0030ED20 /* Project object */;
+}

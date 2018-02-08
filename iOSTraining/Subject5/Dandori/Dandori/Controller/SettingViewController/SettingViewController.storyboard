@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rat-eV-coi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="MQE-yR-DMg">
+            <objects>
+                <navigationController id="Rat-eV-coi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="myl-qq-RFB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jmV-Jn-irZ" kind="relationship" relationship="rootViewController" id="QcG-CS-4bX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2B-sW-4n0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="359"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="xjt-TC-GdA">
+            <objects>
+                <viewController id="jmV-Jn-irZ" customClass="SettingViewController" customModule="Dandori" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aqb-vb-BlB"/>
+                        <viewControllerLayoutGuide type="bottom" id="PMy-B6-iai"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9pC-mD-kk5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZGb-fB-m4q">
+                                <rect key="frame" x="16" y="112" width="343" height="76"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uSh-YZ-Wf3">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="未完了"/>
+                                            <segment title="全て"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="elm-vG-3hL">
+                                        <rect key="frame" x="0.0" y="48" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="短期"/>
+                                            <segment title="長期"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZGb-fB-m4q" firstAttribute="top" secondItem="aqb-vb-BlB" secondAttribute="bottom" constant="48" id="HhW-aa-zw5"/>
+                            <constraint firstItem="ZGb-fB-m4q" firstAttribute="leading" secondItem="9pC-mD-kk5" secondAttribute="leadingMargin" id="ORm-UB-wHy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZGb-fB-m4q" secondAttribute="trailing" id="Yts-M9-oSI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="xeT-HE-GBQ"/>
+                    <navigationItem key="navigationItem" title="設定" id="KBR-Fo-Mct"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1C-Xm-nGb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+    </scenes>
+</document>
